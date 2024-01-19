@@ -1,0 +1,101 @@
+﻿@page
+@model FoodDeliveryClient.App.Pages.Admins.CreateModel
+
+
+<div class="container">
+    <div class=" text-center mt-5 ">
+
+        <h1>Create Admin</h1>
+
+
+    </div>
+
+
+    <div class="row ">
+        <div class="col-lg-7 mx-auto">
+            <div class="card mt-2 mx-auto p-4 bg-light">
+                <div class="card-body bg-light">
+
+                    <div class="container">
+                        <form id="contact-form" role="form" method="post">
+
+
+
+                            <div class="controls">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_Username">Username *</label>
+                                            <input id="form_Username" type="text" name="Username" class="form-control" placeholder="Please enter your Username *" required="required" data-error="Username is required.">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_Password">Password *</label>
+                                            <input id="form_Password" type="password" name="Password" class="form-control" placeholder="Please enter your Password *" required="required" data-error="Password is required.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_FirstName">FirstName *</label>
+                                            <input id="form_FirstName" type="text" name="FirstName" class="form-control" placeholder="Please enter your FirstName *" required="required" data-error="FirstName is required.">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_LastName">LastName *</label>
+                                            <input id="form_LastName" type="text" name="LastName" class="form-control" placeholder="Please enter your LastName *" required="required" data-error="LastName is required.">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="form_Email" type="email" name="Email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Image </label>
+                                            <input id="form_url" type="url" name="Image" class="form-control" placeholder="Please enter your url image " data-error="Valid url is required.">
+
+                                        </div>
+                                    </div>
+       
+                                </div>
+                                <div class="row">
+
+
+                                    <div class="col-md-12">
+
+                                        <input type="submit" class="btn btn-success btn-send  pt-2 btn-block
+                            " value="Send">
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- /.8 -->
+
+        </div>
+        <!-- /.row-->
+
+    </div>
+</div>
+

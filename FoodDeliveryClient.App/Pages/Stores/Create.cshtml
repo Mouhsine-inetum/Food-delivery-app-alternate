@@ -1,0 +1,75 @@
+﻿@page
+@model FoodDeliveryClient.App.Pages.Stores.CreateModel
+@{
+}
+
+
+
+
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3>Request a new store</h3>
+            <p class="blue-text">Create a new store</p>
+            <div class="card">
+                <h5 class="text-center mb-4">Powering world-class companies</h5>
+                <form class="form-card" onsubmit="OnPost" method="post">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input type="text" id="name" name="name" placeholder="Enter the name"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Description<span class="text-danger"> *</span></label> <input type="text" id="description" name="description" placeholder="Enter the description"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Address<span class="text-danger"> *</span></label> <input type="text" id="address" name="address" placeholder="Enter the address"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">City<span class="text-danger"> *</span></label> <input type="text" id="city" name="city" placeholder="Enter the city"> </div>
+
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone<span class="text-danger"> *</span></label> <input type="text" id="phone" name="phone" placeholder="Enter phone number"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Postal code<span class="text-danger"> *</span></label> <input type="text" id="postalCode" name="postalCode" placeholder="Enter the postalCode"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Delivery Time (in minute)<span class="text-danger"> *</span></label> <input type="text" id="deliveryTimeInMinutes" name="deliveryTimeInMinutes" placeholder="Enter delivery in minutes"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Delivery Fee<span class="text-danger"> *</span></label> <input type="text" id="deliveryFee" name="deliveryFee" placeholder="Enter delivery Fee"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Category<span class="text-danger"> *</span></label> <input type="text" id="category" name="category" placeholder="Enter the category"> </div>
+
+                    </div>
+                  
+                    <div class="row justify-content-end">
+                        <br />
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Request to create a store</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* @section scriptAdd {
+<script >
+
+    $("#btnAdd").on('click', async function () {
+        // Get the values of the input elements with id "xInput" and "yInput"
+        var xValue = parseFloat($("#x").val());
+        var yValue = parseFloat($("#y").val());
+
+        // Create a coordinate object
+        var coordinate = { x: xValue, y: yValue };
+
+        // Call the server-side endpoint to add the coordinate
+        $.ajax({
+            async: true,
+            type: 'POST',
+            url: '@Url.Page("/Stores/Create", "OnPostAddCoordinate")',
+            data: { x: xValue, y: yValue },
+            success: function () {
+                // Optionally, update the UI or perform additional actions on success
+                console.log('Coordinates added successfully.');
+            },
+            error: function (request, error) {
+                console.log(arguments);
+                alert(" Can't do because: " + error);
+            }
+        });
+    });
+
+</script>
+} *@
